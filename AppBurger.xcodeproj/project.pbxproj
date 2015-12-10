@@ -12,6 +12,7 @@
 		8939FB6C1C192A98003520EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8939FB6A1C192A98003520EC /* Main.storyboard */; };
 		8939FB6E1C192A98003520EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8939FB6D1C192A98003520EC /* Assets.xcassets */; };
 		8939FB711C192A98003520EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8939FB6F1C192A98003520EC /* LaunchScreen.storyboard */; };
+		8939FB7B1C19370A003520EC /* Datos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8939FB7A1C19370A003520EC /* Datos.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,8 @@
 		8939FB6D1C192A98003520EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8939FB701C192A98003520EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8939FB721C192A98003520EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8939FB781C193651003520EC /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		8939FB7A1C19370A003520EC /* Datos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Datos.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +63,18 @@
 				8939FB6D1C192A98003520EC /* Assets.xcassets */,
 				8939FB6F1C192A98003520EC /* LaunchScreen.storyboard */,
 				8939FB721C192A98003520EC /* Info.plist */,
+				8939FB791C19365F003520EC /* playgrounds */,
+				8939FB781C193651003520EC /* MyPlayground.playground */,
+				8939FB7A1C19370A003520EC /* Datos.swift */,
 			);
 			path = AppBurger;
+			sourceTree = "<group>";
+		};
+		8939FB791C19365F003520EC /* playgrounds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = playgrounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,7 +109,6 @@
 				TargetAttributes = {
 					8939FB621C192A98003520EC = {
 						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = F3K24534QQ;
 					};
 				};
 			};
@@ -138,6 +150,7 @@
 			files = (
 				8939FB691C192A98003520EC /* ViewController.swift in Sources */,
 				8939FB671C192A98003520EC /* AppDelegate.swift in Sources */,
+				8939FB7B1C19370A003520EC /* Datos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +261,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = AppBurger/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = atd.AppBurger;
@@ -259,6 +273,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = AppBurger/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = atd.AppBurger;

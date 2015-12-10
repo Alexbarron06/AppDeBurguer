@@ -1,25 +1,98 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AppBurger" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pais" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQS-JX-X5Q">
+                                <rect key="frame" x="113" y="173" width="91" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipo de Hamburguesa" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GsA-Yj-x6h">
+                                <rect key="frame" x="47" y="273" width="226" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Precio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzc-6g-CQp">
+                                <rect key="frame" x="113" y="427" width="95" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="90i-0u-k8U">
+                                <rect key="frame" x="32" y="93" width="257" height="34"/>
+                                <color key="backgroundColor" red="0.16051688550000001" green="0.47182243899999998" blue="0.79511916039999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Quiero una Hamburguesa!!">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tengoHambre" destination="BYZ-38-t0r" eventType="touchUpInside" id="hVP-zI-46Q"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#disfrutaTuHamburguesa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oy4-YL-Frv">
+                                <rect key="frame" x="38" y="495" width="241" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AppBurguer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="44d-ak-lkZ">
+                                <rect key="frame" x="84" y="20" width="149" height="33"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.034639499220000002" green="0.031475190850000001" blue="0.4164693813" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="44d-ak-lkZ" secondAttribute="trailing" constant="71" id="66K-AJ-UYb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oy4-YL-Frv" secondAttribute="trailing" constant="25" id="D3P-H5-CwA"/>
+                            <constraint firstItem="44d-ak-lkZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="68" id="Inb-Gl-ocY"/>
+                            <constraint firstItem="pzc-6g-CQp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="97" id="MhT-Tv-oDd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GsA-Yj-x6h" secondAttribute="trailing" constant="31" id="UxW-7z-Ovq"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pzc-6g-CQp" secondAttribute="bottom" constant="114" id="Vbu-EF-rVN"/>
+                            <constraint firstItem="90i-0u-k8U" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="YKc-HT-mJS"/>
+                            <constraint firstItem="90i-0u-k8U" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="73" id="dDP-VM-gYN"/>
+                            <constraint firstItem="GsA-Yj-x6h" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="253" id="dOX-WO-LsS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="90i-0u-k8U" secondAttribute="trailing" constant="15" id="f2c-0C-9Z7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oy4-YL-Frv" secondAttribute="bottom" constant="52" id="hLZ-51-pf2"/>
+                            <constraint firstItem="AQS-JX-X5Q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="97" id="j6s-YB-9oB"/>
+                            <constraint firstItem="pzc-6g-CQp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="97" id="jb0-sn-kth"/>
+                            <constraint firstItem="GsA-Yj-x6h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="31" id="jtT-kq-bwj"/>
+                            <constraint firstItem="AQS-JX-X5Q" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="153" id="jxn-pA-8fE"/>
+                            <constraint firstItem="44d-ak-lkZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="mzV-eG-aGJ"/>
+                            <constraint firstItem="oy4-YL-Frv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="22" id="okq-Dv-TBV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pzc-6g-CQp" secondAttribute="trailing" constant="96" id="sIE-JI-Dqh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AQS-JX-X5Q" secondAttribute="trailing" constant="100" id="wYb-NV-gKf"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="losPaises" destination="AQS-JX-X5Q" id="681-Gd-6jU"/>
+                        <outlet property="tipoDeHamburguesas" destination="GsA-Yj-x6h" id="Zl4-Hg-W0K"/>
+                        <outlet property="tipoDePrecio" destination="pzc-6g-CQp" id="b9b-2k-62V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="120" y="321"/>
         </scene>
     </scenes>
 </document>
